@@ -50,7 +50,11 @@ function sortearAmigo() {
     document.getElementById('resultado').textContent = `🎉 El amigo secreto es: ${amigoSorteado}`;
 
 
-   
+    // Limpieza después del sorteo
+     listaDeAmigos = []; // Limpiar arreglo
+    document.getElementById('listaAmigos').innerHTML = ''; // Limpiar lista visible
+    document.getElementById('amigo').value = ''; // Limpiar campo de entrada
+
 
   }
 
