@@ -19,5 +19,7 @@ function agregarAmigo() {
     //Limpiar el campo de entrada
     input.value = '';
 
-  
-}
+    //Mostrar la lista actualizada en consola
+    console.log(listaDeAmigos);
+
+  }
