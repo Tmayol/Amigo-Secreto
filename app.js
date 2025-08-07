@@ -22,4 +22,19 @@ function agregarAmigo() {
     //Mostrar la lista actualizada en consola
     console.log(listaDeAmigos);
 
-  }
+      mostrarLista();
+
+}
+
+     //Funcion de Mostrar la lista
+function mostrarLista() {
+    let lista = document.getElementById('listaAmigos');
+    lista.innerHTML = '';
+
+    for (let amigo of listaDeAmigos) {
+        let item = document.createElement('li');
+        item.textContent = amigo;
+        lista.appendChild(item);
+    }
+}
+
