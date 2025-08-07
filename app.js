@@ -26,7 +26,7 @@ function agregarAmigo() {
 
 }
 
-     //Funcion de Mostrar la lista
+     //Funcion de Mostrar la lista.
 function mostrarLista() {
     let lista = document.getElementById('listaAmigos');
     lista.innerHTML = '';
