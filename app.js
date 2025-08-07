@@ -3,15 +3,20 @@
 let listaDeAmigos = [];
 
 function agregarAmigo() {
-    // 1. Capturar el valor del campo de entrada
+    //Capturar el valor del campo de entrada
     let input = document.getElementById('amigo');
     let nombre = input.value.trim();
     
-    // 2. Validar la entrada
+    //Validar la entrada
     if (nombre === '') {
         alert("Por favor, inserte un nombre.");
         return;
     }
+    
+    //Actualizar el array de amigos
+    listaDeAmigos.push(nombre);
+
+    
 
 
 }
